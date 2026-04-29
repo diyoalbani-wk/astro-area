@@ -1,0 +1,70 @@
+---
+    import Image from "astro/components/Image.astro";
+    import img from "../assets/2.jpg";
+---
+
+<section class="py-16 md:py-24 px-6">
+    <div class="max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-2 items-start gap-12 lg:gap-16">
+        
+        <div class="space-y-8 md:space-y-10">
+            
+            <div class="space-y-6">
+                <h2 class="text-4xl md:text-5xl lg:text-6xl font-serif tracking-tight leading-[1.1] text-[#0f110c]">
+                    See the Big Picture
+                </h2>
+                <p class="text-[15px] text-gray-500 leading-relaxed max-w-sm">
+                    Area turns your data into clear, vibrant visuals that show you exactly what's happening in each region.
+                </p>
+            </div>
+
+            <div class="border-t border-gray-100">
+                
+                <div class="py-5 border-b border-gray-100 flex gap-6 items-start">
+                    <span class="text-[11px] font-bold text-gray-400 mt-1">01</span>
+                    <p class="text-[13px] leading-relaxed">
+                        <span class="font-bold text-gray-900">Spot Trends in Seconds:</span> No more digging through numbers.
+                    </p>
+                </div>
+
+                <div class="py-5 border-b border-gray-100 flex gap-6 items-start">
+                    <span class="text-[11px] font-bold text-gray-400 mt-1">02</span>
+                    <p class="text-[13px] leading-relaxed">
+                        <span class="font-bold text-gray-900">Get Everyone on the Same Page:</span> Share easy-to-understand reports with your team.
+                    </p>
+                </div>
+
+                <div class="py-5 border-b border-gray-100 flex gap-6 items-start">
+                    <span class="text-[11px] font-bold text-gray-400 mt-1">03</span>
+                    <p class="text-[13px] leading-relaxed">
+                        <span class="font-bold text-gray-900">Make Presentations Pop:</span> Interactive maps and dashboards keep your audience engaged.
+                    </p>
+                </div>
+
+                <div class="py-5 border-b border-gray-100 flex gap-6 items-start">
+                    <span class="text-[11px] font-bold text-gray-400 mt-1">04</span>
+                    <p class="text-[13px] leading-relaxed">
+                        <span class="font-bold text-gray-900">Your Global Snapshot:</span> Get a quick, clear overview of your entire operation.
+                    </p>
+                </div>
+
+            </div>
+
+            <div class="pt-2">
+                <button class="bg-[#d9e7c3] hover:bg-[#cedeb1] text-[#2d3816] px-8 py-3.5 rounded-full text-[13px] font-bold transition-all active:scale-95 shadow-sm">
+                    Discover More
+                </button>
+            </div>
+        </div>
+
+        <div class="w-full">
+            <div class="rounded-[32px] md:rounded-[48px] overflow-hidden aspect-[4/5] shadow-sm">
+                <Image 
+                    src={img} 
+                    alt="Abstract Pillars" 
+                    class="w-full h-full object-cover transition-transform duration-700 hover:scale-105"
+                />
+            </div>
+        </div>
+
+    </div>
+</section>

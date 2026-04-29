@@ -1,0 +1,29 @@
+---
+    import Image from 'astro/components/Image.astro';
+    import img from '../assets/image(1).png';
+    import image from '../assets/image.png';
+---
+
+<main class="container mx-auto pt-24 md:pt-24 pb-20 md:pb-40 px-6">
+
+    <div class="max-w-5xl mx-auto text-center mb-12 md:mb-20">
+        <h2 class="text-[55px] md:text-[90px] lg:text-[135px] font-medium tracking-tighter leading-[1.0] md:leading-[0.9] text-[#0f110c]">
+            Browse everything.
+        </h2>
+    </div>
+
+    <div class="relative max-w-[1050px] mx-auto">
+        
+        <div class="absolute -inset-x-4 md:-inset-x-10 lg:-inset-x-20 top-20 md:top-32 bottom-0 bg-[#9ba788] rounded-[32px] md:rounded-[56px] -z-10 shadow-sm"></div>
+        
+        <div class="hidden md:block relative shadow-2xl bg-[#0a0a0a] border-t-[10px] border-x-[10px] border-black border-b-0 rounded-t-[35px] overflow-hidden">        
+            <Image src={img} alt="Dashboard" class="w-full object-cover block" />
+        </div>
+
+        <div class="md:hidden relative mx-auto max-w-[320px] overflow-hidden">
+            <div class="h-[420px] w-full overflow-hidden rounded-t-[2.5rem]">
+                <Image src={image} alt="Mobile" class="w-full h-full object-cover object-top" />
+            </div>
+        </div>
+    </div>
+</main>
