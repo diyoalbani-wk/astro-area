@@ -17,9 +17,21 @@
         </style>
     </head>
 
-    <body class="text-[#1a1a1a] antialiased">
+    <body class="text-[#1a1a1a] antialiased overflow-x-hidden">
 
         <slot />
 
     </body>
 </html>
+
+<script>
+  import AOS from 'aos';
+  import 'aos/dist/aos.css'; 
+
+  AOS.init({
+    duration: 800, 
+    once: false,   
+    offset: window.innerWidth < 768 ? 20 : 100,
+
+  });
+</script>
